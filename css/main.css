@@ -33,12 +33,17 @@
   display: flex;
   margin-bottom: 13px;
 }
+a {
+  text-decoration: none;
+}
 
 .nav--item {
   margin-left: 10px;
   margin-right: 10px;
   font-family: var(--font);
   font-size: 16px;
+  text-decoration: none;
+  color: var(--nav-font-color);
 }
 
 .title {
