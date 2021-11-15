@@ -3,8 +3,6 @@
   --background-color: #3cdbc0;
   ---main-font-color: #fff;
   --font: "Rubik", sans-serif;
-  --nav-font-size: 16px;
-  --main-font-size: 30px;
 }
 
 .header {
@@ -40,11 +38,34 @@
   margin-left: 10px;
   margin-right: 10px;
   font-family: var(--font);
-  font-size: var(--nav-font-size);
+  font-size: 16px;
 }
 
 .title {
   font-family: var(--font);
   color: var(---main-font-color);
-  font-size: var(--main-font-size);
+  font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 40px;
+  }
 }
